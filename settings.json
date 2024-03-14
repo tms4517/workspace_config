@@ -1,0 +1,88 @@
+{
+    "window.title": "${dirty}${rootName}${separator}${activeEditorShort}",
+
+    "editor.minimap.enabled": false,
+    "editor.scrollBeyondLastLine": false,
+    "editor.rulers": [80],
+    "editor.tabSize": 2,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wrappingIndent": "same",
+    "editor.wordWrapColumn": 80,
+    "editor.useTabStops": false,
+    "editor.renderWhitespace": "boundary",
+    "editor.indentSize": "tabSize",
+    "editor.guides.bracketPairs": true,
+    "editor.formatOnSave": false,
+    "editor.insertSpaces": true,
+    "editor.tabCompletion": "on",
+
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#3b5832",
+        "editor.selectionHighlightBackground": "#5c5630",
+        "editorRuler.foreground": "#b9b3b999"
+    },
+
+    "files.encoding": "utf8",
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+
+    "explicitFolding.autoFold": "1",
+    "explicitFolding.rules": {
+        "*": {
+            "begin": "{{{",
+            "end": "}}}"
+        }
+    },
+
+    "files.associations": {
+        "*.json": "json",
+        "*.template": "tcl",
+        "*.{v,sv}": "systemverilog",
+        "*.fl": "systemverilog",
+        "*.{tb_,design_,lib_}{sim,opt,comp,args,comp}": "tcl",
+        "*.{sim,opt,comp,args,comp,defines}": "tcl",
+        "*.{wgl,prj,testproc,dofile,do,upf,sgdc,awl}": "tcl",
+        "JenkinsFile": "groovy",
+        "Makefile.*": "makefile",
+        "*.txt": "txt",
+        "*.md": "markdown"
+    },
+
+    // SVG
+    "workbench.editorAssociations": {
+        "*.svg": "hediet.vscode-drawio-text",
+    },
+
+    // CPP
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+
+    // Git
+    "git.suggestSmartCommit": false,
+    "git.confirmSync": false,
+    "[markdown]": {
+        "editor.wordWrap": "wordWrapColumn"
+    },
+    "editor.scrollbar.vertical": "visible",
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+
+    // SV
+    "verilog.linting.linter": "verilator",
+    "verilog.linting.path": "/usr/bin",
+
+    // Task on save
+    "triggerTaskOnSave.tasks": {
+        "verilator lint": [
+          "*"
+        ],
+        "svlint": [
+            "*"
+          ],
+    }
+
+}
