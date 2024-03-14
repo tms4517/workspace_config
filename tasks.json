@@ -1,0 +1,52 @@
+{
+  "version": "2.0.0",
+
+  "tasks": [
+    {
+      "label": "verilator lint",
+      "type": "shell",
+      "command": "verilator --lint-only -Wall *.sv",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "dedicated",
+        "clear": true,
+        "showReuseMessage": false
+      },
+      "problemMatcher": {
+        "pattern":[
+          {
+            "regexp": ".",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "severity": 4,
+            "message": 5
+          }
+        ]
+      }
+    },
+    {
+      "label": "svlint",
+      "type": "shell",
+      "command": "svlint -c ~/svlint_ddvc.toml *.sv",
+      "presentation": {
+        "reveal": "never",
+        "panel": "dedicated",
+        "clear": true,
+        "showReuseMessage": false
+      },
+      "problemMatcher": {
+        "pattern":[
+          {
+            "regexp": ".",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "severity": 4,
+            "message": 5
+          }
+        ]
+      }
+    }
+  ]
+}
