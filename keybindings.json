@@ -2035,7 +2035,11 @@
 { "key": "up",                    "command": "selectPrevCodeAction",
                                      "when": "codeActionMenuVisible" },
 { "key": "escape",                "command": "diffEditor.exitCompareMove",
-                                     "when": "comparingMovedCode" }
+                                     "when": "comparingMovedCode" },
+                                  {
+                                    "key": "alt+s",
+                                    "command": "git.stageFile"
+                                  }
 ]
 
 
