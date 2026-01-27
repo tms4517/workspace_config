@@ -1,0 +1,9 @@
+alias ls 'ls --color=auto'
+
+alias gc 'git checkout'
+alias gcb 'git checkout -b'
+alias gx 'git clone --recurse-submodules'
+alias gg 'git gui&'
+
+alias findInVerilog 'find . -name "*.*v" -type f -exec grep -H \!:1 \{\} \;'
+alias findInTree 'git ls-tree --full-tree -r HEAD | grep'
